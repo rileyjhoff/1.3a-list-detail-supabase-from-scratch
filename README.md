@@ -32,7 +32,19 @@ Additional considerations:
 ![list-wireframe](/assets/list-wireframes.png)
 ![detail-wireframe](/assets/detail-wireframes.png)
 
+## Order
 
+  1. write fetch function for supabase data (done)
+  2. finish building out supabase database with all players on Colorado Avalanche and their bio/stats
+  3. hard code list page HTML to help guide render function for list page
+    - player cards will go in one of three divs, depending on position
+    - player cards will have just the player name, number, and their headshot
+  4. write render function for list page (include link to player bio page)
+  5. write an onload event listener for the list page that will fetch the data from supabase, render, and append all the player cards
+  6. write hard coded html for bio page to help guide render function for bio page
+  7. write render function for bio page
+  8. write an onload event listener for the bio page that will fetch the data for that specific player and render and append the bio page elements
+  
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |
 | Visit the deployed pages on GitHub pages, with link in the About section of the Github repo|        2 |
