@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import {  } from './fetch-utils.js';
+import { getPlayerData } from './fetch-utils.js';
 import {  } from './render-utils.js';
 
 // let state
