@@ -90,6 +90,12 @@ footer {
     box-shadow: var(--shadow);
 }
 
+.player-container {
+    display: flex;
+    flex-flow: wrap;
+    width: 80%;
+}
+
 .player-card {
     height: 200px;
     box-shadow: var(--shadow);
