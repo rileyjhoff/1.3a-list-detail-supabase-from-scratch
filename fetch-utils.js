@@ -3,13 +3,24 @@ const SUPABASE_URL = 'https://zhmowgcybteqgiwwrxln.supabase.co';
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function getPlayerData() {
+export async function getAllPlayerData() {
     const response = await client
         .from('players')
         .select('*');
 
     return checkError(response);
 }
+
+export async function getPlayerData(id) {
+    const response = await client
+        .from('players')
+        .select('*')
+        .match({ id: id })
+        .single();
+
+    return checkError(response);
+}
+
 
 function checkError({ data, error }) {
     return error ? console.error(error) : data;

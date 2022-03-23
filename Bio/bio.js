@@ -4,10 +4,11 @@ import { renderPlayerBio } from '../render-utils.js';
 
 const playerBioContainerEl = document.querySelector('.player-bio-container');
 
-// let state
 
-// set event listeners 
-// get user input
-// use user input to update state 
-// update DOM to reflect the new state
-
+window.addEventListener('load', async () => {
+    const data = new URLSearchParams(window.location.search);
+    const id = data.get('id');
+    const player = await getPlayerData(id);
+    const playerBioEl = renderPlayerBio(player);
+    playerBioContainerEl.append(playerBioEl);
+});
