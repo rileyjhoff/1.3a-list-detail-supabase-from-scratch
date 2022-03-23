@@ -14,6 +14,7 @@ export function renderPlayerCard(player){
 
     nameEl.textContent = player.name + ' #' + player.number;
     imgEl.src = player.headshot;
+    anchor.href = `./bio/?id=${player.id}`;
 
     playerCard.append(nameEl, imgEl);
     anchor.append(playerCard);
