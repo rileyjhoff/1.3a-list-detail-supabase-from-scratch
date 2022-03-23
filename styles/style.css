@@ -85,7 +85,23 @@ footer {
     bottom: 0;
     height: var(--footer-height);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.player-card {
+    height: 200px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.player-card img {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.player-card h4 {
+    margin: 0;
 }
